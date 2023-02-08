@@ -38,7 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          id: 'notebook',
+          // id: 'notebook',
           path: 'notebook',
           routeBasePath: '/', // 把文档放在网站根部
           sidebarPath: require.resolve('./sidebars.js'),
@@ -66,12 +66,12 @@ const config = {
         },
         items: [
           {
-            to: '/notebook/intro',
+            to: '/index',
             position: 'left',
             label: 'NoteBook',
           },
           {
-            to: 'https://blog.sku.moe', 
+            href: 'https://blog.sku.moe', 
             label: 'Blog', 
             position: 'left'
           },
@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/index',
               },
             ],
           },
@@ -116,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://blog.sku.moe',
               },
               {
                 label: 'GitHub',
